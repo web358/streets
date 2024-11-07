@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="public/css/style.css" />
+    <title>Sofia Streets</title>
+</head>
+
+<body> 
+
+  <nav class="playNav2">
+    <!-- <img src="public/images/sneakers.png" alt="" class="firstImg"> -->
+          <span><h3>Find a place of interest!</h3></span>
+          <span><h4>Get in touch with the guide for further details...</h4></span>
+          
+      </nav>
+
+      <main class="contactsMain3">
+
+        <section class="animation2"> 
+          <article>
+            <iframe 
+            title="map"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7390.411602537908!2d23.319318960228227!3d42.684940833238954!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40aa850fb6af8ebb%3A0x87a301b7860955b9!2sNational%20Palace%20of%20Culture!5e0!3m2!1sen!2sbg!4v1679669697706!5m2!1sen!2sbg" 
+            width="320px" 
+            height="300px" 
+        /></iframe>
+          <!-- <img src="public/images/zapaden.png" alt="" id="dragon2"> -->
+        </article>
+          </section>
+
+          <article>
+          <div class="categories">
+            <h4>categories:</h4>
+            <button>substances</button>
+            <button>physical satisfaction</button>
+            <button>past events</button>
+            <button>current events</button>
+            <button>others</button>
+          </div>
+        </article>
+
+        <div class="sections">
+          <section class="boxes4">
+            <button class="playBtn">
+              <a href="home.html">about</a>        
+                   </button>               
+       </section>
+      
+              <section class="boxes5">
+      <button class="playBtn">
+        <a href="#">search a place</a>
+              </button> 
+              </section>
+      
+               <section class="boxes6">
+                   <button class="playBtn">
+                    <a href="contacts.html">get in touch</a>
+                  </button>
+               </section>
+              </div>
+              
+               <div class="tableDiv">
+                <button class="closeBtn">
+                   <img src="public/images/close.png" alt="" class="second">
+                </button>
+              <br><span></span><br>
+              <br><span></span><br>
+              <br><span></span><br>
+              <br><span></span><br>
+             </div>   
+               
+          </main>
+  
+          <footer class="footer2">
+              © VickySite
+              <h5>Click here for more sites!</h5>
+          </footer>
+</body>
+</html>
+
+<script>
+  let spans = document.querySelectorAll('span')
+  let [first, second, third, fourth, fifth, sixth] = spans
+  let categoryBtns = Array.from(document.querySelectorAll('button')).slice(0, 5)
+  categoryBtns.forEach(x => x.addEventListener('click', show)) 
+  function show(e){
+    let i = categoryBtns.indexOf(e.target)
+    if(i !== -1){
+      document.querySelector('.tableDiv').style.display = 'block'
+    }
+    sixth.textContent = 'Stay tuned for more!'
+    if(i === 0){
+     third.textContent = 'Konstantin Velichkov - 2 major areas'
+     fourth.textContent = 'Zona B 5 - 1 major area'
+     fifth.textContent = 'Faculteta - the whole area'
+    }
+    if(i === 1){
+     third.textContent = 'Macedonia square- 1 major area'
+     fourth.textContent = 'Luvov most - 1 major area'
+     fifth.textContent = ''
+    }
+    if(i === 2){
+     third.textContent = 'See where famous criminals were killed'
+     fourth.textContent = 'See where there were shootings or other events'
+    }
+    if(i === 3){
+     third.textContent = 'Check what\'s going on recenlty'
+     fourth.textContent = 'Meet people of interest'
+    }
+    if(i === 4){
+     third.textContent = 'Anything you want to know or see - just ask the guide'
+     fourth.textContent = ''
+    }
+  }
+let btn = document.querySelector('.closeBtn')
+btn.addEventListener('click', () => {
+  document.querySelector('.tableDiv').style.display = 'none'
+})
+</script>

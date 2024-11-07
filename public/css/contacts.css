@@ -1,0 +1,114 @@
+#dragon2 {
+  height: 290px;
+  width: 390px;
+  border-radius: 5px;
+}
+.tableDiv {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  /* margin-top: -15%; */
+   margin-left: -5%;
+   width: 250px;
+   height: 250px;
+   background-image: -webkit-linear-gradient(#deeca3, rgb(103, 19, 19));
+   border-radius: 5px;
+   box-shadow: 5px 10px 5px rgba(11, 0, 0, 0.629);
+     font-family: 'Roboto', sans-serif
+}
+.closeBtn {
+  /* display: none; */
+  border: none;
+  border-radius: 5px;
+  background-color: transparent;
+}
+.closeBtn:hover {
+  transform: scale(1.3);
+}
+.second {
+  width: 30px;
+}
+
+.secondImg {
+  border-radius: 50%;
+  height: 75px;
+  margin-top: 10px;
+  margin-left: -220px;
+  animation: moveIcon2 3s ease-in-out alternate, spin 12s linear infinite;
+}
+  
+@keyframes moveIcon2 {
+  0% {
+    transform: translatex(350px) rotate(0deg);
+  }
+  100% {
+    transform: translatex(0) rotate(360deg);
+  }
+}
+.text {
+  position: absolute;
+  margin-top: 65%;
+  color: white;
+  background-image: -webkit-linear-gradient(#deeca3, red);
+  width: 250px;
+  height: 106px;
+  border-radius: 5px;
+  box-shadow: 5px 10px 5px rgba(11, 0, 0, 0.629);
+  animation: zoomin 1s ease-in-out;
+}
+
+@keyframes zoomin {
+  0% {
+    transform: scale(0);
+  }
+  90% {
+    transform: scale(1.1);
+  }
+  95% {
+    transform: scale(1.07);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .text {
+    margin-top: 25%;
+    margin-left: -20%;
+    width: 400px;
+    height: 150px;
+  }
+  .text span {
+    position: absolute;
+    margin-top: 10%;
+    margin-left: 10%;
+    width: 300px;
+  }
+  .text img {
+    position: absolute;
+    margin: 25%;
+    margin-left: 50%;
+    width: 50px;
+  }
+  .footer3 {
+    margin-top: 10%;
+    margin-left: 60%;
+    color: white;
+  }
+  }
+  
+
+  .footer3 {
+    position: absolute;
+    margin-left: 30%;
+    color: white;
+  }
+
+
+  .text img {
+    position: absolute;
+    /* margin: 25%;
+    margin-left: 50%; */
+    width: 50px;
+  }
