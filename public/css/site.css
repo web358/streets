@@ -208,6 +208,9 @@ article div, article h2 {
   margin-left: 30%;
   color: white;
 }
+.footer1 span {
+  text-decoration: underline;
+}
 @media screen and (min-width: 800px) {
   .boxes, .boxes2, .boxes3 {
     margin-top: -5%;
@@ -225,6 +228,10 @@ article div, article h2 {
 .footer1{
   /* margin-left: 40%; */
   margin-top: -1%;
+  color: rgb(255, 0, 208);
+  text-shadow:  2px 1px 2px white;
+}
+  .footer1 span {
   color: rgb(255, 0, 208);
   text-shadow:  2px 1px 2px white;
 }
