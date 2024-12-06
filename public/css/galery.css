@@ -83,6 +83,9 @@ iframe {
   margin-left: 35%;
   color: white;
 }
+.footer2 span {
+  text-decoration: underline;
+}
 .sections {
   position: absolute;
   display: flex;
