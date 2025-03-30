@@ -1,14 +1,14 @@
 body {
   font-family: 'Lato', sans-serif;
   overflow-x: hidden;
-  background: url(../images/background.png)no-repeat;
+  /* background: url(../images/background.png)no-repeat; */
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     min-height: 1000px;
   /* background-color: rgb(198, 240, 233); */
-  /* background-image: linear-gradient(to right, #d6e4ea,rgb(7, 76, 65)); */
+  background-image: linear-gradient(rgb(244, 231, 170) ,#670fd3);
 }
 .contactsMain3{
   margin-top: -1%;
@@ -204,6 +204,7 @@ article div, article h2 {
   display: none;
 }
 .footer1 {
+  margin-top: 6%;
   /* margin-top: 42%; */
   margin-left: 30%;
   color: white;
@@ -211,6 +212,7 @@ article div, article h2 {
 .footer1 span {
   text-decoration: underline;
 }
+
 @media screen and (min-width: 800px) {
   .boxes, .boxes2, .boxes3 {
     margin-top: -5%;
@@ -231,7 +233,7 @@ article div, article h2 {
   color: rgb(255, 0, 208);
   text-shadow:  2px 1px 2px white;
 }
-  .footer1 span {
+.footer1 span {
   color: rgb(255, 0, 208);
   text-shadow:  2px 1px 2px white;
 }
@@ -243,3 +245,5 @@ h5 {
   margin-top: 1%;
   width: 200px;
 }
+
+
