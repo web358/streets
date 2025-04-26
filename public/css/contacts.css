@@ -3,19 +3,7 @@
   width: 390px;
   border-radius: 5px;
 }
-.tableDiv {
-  display: none;
-  position: absolute;
-  z-index: 1;
-  /* margin-top: -15%; */
-   margin-left: -5%;
-   width: 250px;
-   height: 250px;
-   background-image: -webkit-linear-gradient(#deeca3, rgb(103, 19, 19));
-   border-radius: 5px;
-   box-shadow: 5px 10px 5px rgba(11, 0, 0, 0.629);
-     font-family: 'Roboto', sans-serif
-}
+
 .closeBtn {
   /* display: none; */
   border: none;
@@ -120,7 +108,7 @@
     color: rgb(209, 36, 177);
     text-shadow:  2px 1px 2px white;
   }
-   .footer3 span {
+  .footer3 span {
     color: rgb(209, 36, 177);
     text-shadow:  2px 1px 2px white;
   }
@@ -156,3 +144,5 @@
       margin-top: 30%;
     }
   }
+
+ 
