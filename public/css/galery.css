@@ -28,8 +28,8 @@ h4 {
 }
 .categories {
   position: absolute;
-  margin-top: 41%;
-  margin-left: -40%;
+  margin-top: 241%;
+  margin-left: -8%;
   background-image: -webkit-linear-gradient(#deeca3, red);
   height: 200px;
   width: 140px;
@@ -72,25 +72,32 @@ h4 {
   transform: scale(1.2);
 }
 
-iframe {
-  margin-left: 20%;
+iframe {  
+  /* margin-left: 20%; */
   border-radius: 5px;
   box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.744);
 }
+.iframe {
+  z-index: -1;
+  margin-left: 10%;
+}
 
 .footer2 {
-  margin-top: 48%;
-  margin-left: 35%;
+  margin-top: 78%;
+  margin-left: 25%;
   color: white;
 }
 .footer2 span {
   text-decoration: underline;
 }
-.sections {
+.sections, .sections2 {
   position: absolute;
   display: flex;
   width: 150px;
   margin-left: -5%;
+}
+.sections2 {
+  margin-top: 120%;
 }
 .boxes4, .boxes5, .boxes6 {
   z-index: 1;
@@ -109,36 +116,102 @@ iframe {
   margin-left: 5%;
 }
 
-.tableDiv {
+.slideshow {
+  display: block;
   position: absolute;
-  margin-right: -15%;
+  margin-top: 25%;
+  margin-left: -50%;
 }
 
+.image__container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  border-radius: 10px;
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2);
+  transition: opacity 1s ease-in-out;
+}
+.image__container.active {
+  opacity: 1;
+}
+.slider3 {
+  width: 250px;
+  height: 130px;
+  border-radius: 5px;
+  box-shadow: 5px 10px 5px rgba(11, 0, 0, 0.629);
+}
 
+.tableDiv {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  /* margin-top: 135%; */
+   margin-left: -5%;
+   width: 250px;
+   height: 250px;
+   background-image: -webkit-linear-gradient(#deeca3, rgb(103, 19, 19));
+   border-radius: 5px;
+   box-shadow: 5px 10px 5px rgba(11, 0, 0, 0.629);
+     font-family: 'Roboto', sans-serif
+}
+@media screen and (max-width: 540px) {
+  .tableDiv {
+    margin-top: 135%;
+  }
+}
+@media screen and (width: 768px) {
+  .categories {
+    margin-top: 50%;
+    margin-left: 30%;
+  }
+  .tableDiv {
+    margin-top: 150%;
+  }
+}
 @media screen and (min-width: 800px) {
   .animation2 {
     margin-left: 12%;
   }
   .categories {
-    margin-top: -4%;
+    margin-top: 18%;
     margin-left: 12%;
     width: 200px;
   }
-  .boxes4, .boxes5, .boxes6 {
+ .boxes5, .boxes6 {
     margin-left: 10%;
   }
   .sections {
     margin-right: 50%;
   }
-  .tableDiv {
+  .sections2 {
     margin-top: 40%;
-    margin-right: -40%;
+  }
+  .animation2 {
+    margin-top: 10%;
+    margin-left: -40%;   
+  }
+  .slideshow {
+    margin-top: -5%;
+    margin-left: -30%;
+  }
+  .slider3 {
+    width: 400px;
+    height: 200px;
+  }
+  .tableDiv {
+    margin-top: 18%;
+    margin-left: 60%;
   }
   .footer2{
-    margin-top: -5%;
-    margin-left: 30%;
+    margin-top: 22%;
+    margin-left: 45%;
+    color: white;
+  text-shadow:  2px 1px 2px white;
   }
-   .footer2 span {
+  .footer2 span {
     color: white;
   }
   }
